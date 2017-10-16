@@ -5,32 +5,31 @@ class Game
     @shoot2 = shoot2
   end
 
-  def rock_paper_scissors
+  def rock_paper_scissors()
 
-    case rock_paper_scissors
-      when @shoot1 == @shoot2
-        return "It's a tie"
-      when @shoot1 = "rock"
-        if @shoot2 == "scissors"
-          return "Rock wins"
-        else
-          return "Rock loses"
+      if(@hand1 == 'paper')
+        case @hand2
+          when "scissors"
+            return 'scissors wins'
+          when "rock"
+            return "paper wins"
         end
-
-      when @shoot1 = "scissors"
-        if @shoot2 == "rock"
-          return "Scissors loses"
-        else
-          return "Scissors wins"
+      end
+      if(@hand1 == 'scissors')
+        case @hand2
+          when "paper"
+            return 'scissors wins'
+          when "rock"
+            return "rock wins"
         end
-
-      when @shoot1 = "paper"
-        if @shoot2 == "rock"
-          return "Paper wins"
-        else
-          return "Paper loses"
+      end
+      if(@hand1 == 'rock')
+        case @hand2
+          when "scissors"
+            return 'rock wins'
+          when "paper"
+            return "paper wins"
         end
-
-    end
+      end
   end
 end
