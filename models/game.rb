@@ -1,11 +1,12 @@
 class Game
 
-  def inititalize(shoot1, shoot2)
-    @shoot1 = shoot1
-    @shoot2 = shoot2
+  def inititalize(hand1, hand2)
+    @hand1 = hand1
+    @hand2 = hand2
   end
 
   def rock_paper_scissors()
+    return "It's a tie" if @hand1 == @hand2
 
       if(@hand1 == 'paper')
         case @hand2
