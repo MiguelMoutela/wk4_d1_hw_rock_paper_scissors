@@ -3,7 +3,8 @@ require('sinatra/contrib/all')
 require('./models/game.rb')
 
 get '/' do
-
+  @land
+  erb(:welcome)
 end
 
 get '/:hand1/:hand2' do
