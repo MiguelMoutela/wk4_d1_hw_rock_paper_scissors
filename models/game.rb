@@ -1,6 +1,6 @@
 class Game
 
-  def inititalize(hand1, hand2)
+  def initialize(hand1, hand2)
     @hand1 = hand1
     @hand2 = hand2
   end
